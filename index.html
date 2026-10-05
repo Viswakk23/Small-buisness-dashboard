@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Small Business Dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;800&display=swap" rel="stylesheet" />
+    <script>
+      // Shows any browser error on the page instead of a blank screen
+      window.addEventListener("error", function (e) {
+        var box = document.createElement("pre");
+        box.style.cssText = "padding:16px;color:#b42318;white-space:pre-wrap;font:14px monospace";
+        box.textContent = "Error: " + e.message + "\n" + (e.filename || "") + ":" + (e.lineno || "");
+        document.body.appendChild(box);
+      });
+    </script>
+  </head>
+  <body>
+    <div id="root"><p style="padding:24px;font-family:sans-serif">Loading dashboard…</p></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
